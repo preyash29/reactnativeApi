@@ -3,6 +3,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import Login from '../components/Login/Login';
 import Home from '../components/Home/Home';
+// import About from '../components/About/About';
+
 
 import {appStackScreenOptions} from '../config/navigationConfig';
 
@@ -13,7 +15,10 @@ export default function AuthStack() {
       initialRouteName={'Login'}
       screenOptions={{...appStackScreenOptions, headerTitleAlign: 'center'}}>
       <AuthFlow.Screen name="Login" component={Login} />
-      <AuthFlow.Screen name="Home" component={Home} />
+      {/* <AuthFlow.Screen name="Home" component={Home} />
+      <AuthFlow.Screen name="About" component={About} /> */}
+
+
     </AuthFlow.Navigator>
   );
 }

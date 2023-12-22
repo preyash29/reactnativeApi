@@ -147,10 +147,26 @@ const SideMenu = props => {
             <TouchableOpacity
               style={styles.drawerItem(index === 1)}
               onPress={() => {
-                navigateToScreen('About');
+                navigateToScreen('Category');
               }}>
               <AntDesign name="infocirlceo" size={25} color="white" />
-              <Text style={styles.drawerRouteText}>About</Text>
+              <Text style={styles.drawerRouteText}>Category</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.drawerItem(index === 2)}
+              onPress={() => {
+                navigateToScreen('Notification');
+              }}>
+              <AntDesign name="infocirlceo" size={25} color="white" />
+              <Text style={styles.drawerRouteText}>Notification</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.drawerItem(index === 2)}
+              onPress={() => {
+                navigateToScreen('Profile');
+              }}>
+              <AntDesign name="infocirlceo" size={25} color="white" />
+              <Text style={styles.drawerRouteText}>Profile</Text>
             </TouchableOpacity>
           </ScrollView>
           <View style={styles.footerContainer}>

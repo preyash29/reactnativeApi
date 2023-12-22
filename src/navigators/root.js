@@ -16,7 +16,8 @@ const NavigationRoot = () => {
         initialRouteName={isLoggedIn ? 'App' : 'Auth'}
         screenOptions={{
           headerShown: false,
-        }}>
+        }}
+        >
         {!isLoggedIn ? (
           <Stack.Screen name="Auth" component={AuthStack} />
         ) : (

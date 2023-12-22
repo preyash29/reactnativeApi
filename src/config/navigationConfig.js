@@ -7,6 +7,8 @@ export const drawerScreenOptions = {
   drawerStyle: {
     backgroundColor: 'transparent',
     width: width,
+    // headerShown: true, // Show the header
+    // headerTitle: '',
   },
   overlayColor: 'transparent',
   drawerType: 'front',
@@ -22,4 +24,5 @@ export const appStackHeaderOptions = props => ({
 export const appStackScreenOptions = {
   headerStyle: {backgroundColor: '#1A1924', borderBottomColor: 'white'},
   headerTitleStyle: {color: 'white'},
+  
 };
