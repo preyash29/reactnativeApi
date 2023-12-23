@@ -9,6 +9,7 @@ import {
   Dimensions,
 } from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Svg, {Polygon} from 'react-native-svg';
 // import MaskedView from '@react-native-masked-view/masked-view';
 import MaskedView from '@react-native-masked-view/masked-view';
@@ -111,7 +112,8 @@ const SideMenu = props => {
     opacity,
     transform: [{translateX}],
     flex: 1,
-    backgroundColor: '#1A1924',
+    backgroundColor: '#fff',
+    width:'80%'
   };
 
   return (
@@ -136,20 +138,99 @@ const SideMenu = props => {
           <ScrollView
             showsVerticalScrollIndicator={false}
             style={styles.itemContainer}>
+
+              <View style={{backgroundColor:'#fff8bd',padding:10}}>
+                <View style={{flexDirection:'row'}}>
+                <FontAwesome5 name="user-circle" size={35} color="#9f0202" />
+               <View style={{alignSelf:'center',paddingHorizontal:10,flex:1}}>
+               <Text style={{color:'#9f0202',fontSize:18,fontWeight:'bold'}}>John Mark</Text>
+               </View>
+               <View style={{alignSelf:'center'}}>
+               <FontAwesome5 name="user-edit" size={18} color="#9f0202" />
+               </View>
+                </View>
+                
+              </View>
             <TouchableOpacity
               style={styles.drawerItem(index === 0)}
               onPress={() => {
                 navigateToScreen('Home');
               }}>
-              <AntDesign name="home" size={25} color="white" />
-              <Text style={styles.drawerRouteText}>Home</Text>
+              <Text style={styles.drawerRouteText}>HOME</Text>
             </TouchableOpacity>
             <TouchableOpacity
+              style={styles.drawerItem(index === 0)}
+              onPress={() => {
+                navigateToScreen('Home');
+              }}>
+              <Text style={styles.drawerRouteText}>CHANGE LANGUAGE</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.drawerItem(index === 0)}
+              onPress={() => {
+                navigateToScreen('Home');
+              }}>
+              <Text style={styles.drawerRouteText}>WOMEN'S FASHION</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.drawerItem(index === 0)}
+              onPress={() => {
+                navigateToScreen('Home');
+              }}>
+              <Text style={styles.drawerRouteText}>MEN'S FASHION</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.drawerItem(index === 0)}
+              onPress={() => {
+                navigateToScreen('Home');
+              }}>
+              <Text style={styles.drawerRouteText}>BOY'S & GIRLS FASHION</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.drawerItem(index === 0)}
+              onPress={() => {
+                navigateToScreen('Home');
+              }}>
+              <Text style={styles.drawerRouteText}>BABY FASHION & SUPPLIES</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.drawerItem(index === 0)}
+              onPress={() => {
+                navigateToScreen('Home');
+              }}>
+              <Text style={styles.drawerRouteText}>HOME FURNISHING</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.drawerItem(index === 0)}
+              onPress={() => {
+                navigateToScreen('Home');
+              }}>
+              <Text style={styles.drawerRouteText}>SCHOOL</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.drawerItem(index === 0)}
+              onPress={() => {
+                navigateToScreen('Home');
+              }}>
+              <Text style={styles.drawerRouteText}>MEDICAL DRESS</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.drawerItem(index === 0)}
+             >
+              <Text style={styles.drawerRouteText}>CUSTOMER SERVICE</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.drawerItem(index === 0)}
+              onPress={() => {
+                navigateToScreen('Home');
+              }}>
+              <Text style={styles.drawerRouteText}>LOGOUT</Text>
+            </TouchableOpacity>
+            {/* <TouchableOpacity
               style={styles.drawerItem(index === 1)}
               onPress={() => {
                 navigateToScreen('Category');
               }}>
-              <AntDesign name="infocirlceo" size={25} color="white" />
               <Text style={styles.drawerRouteText}>Category</Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -157,7 +238,6 @@ const SideMenu = props => {
               onPress={() => {
                 navigateToScreen('Notification');
               }}>
-              <AntDesign name="infocirlceo" size={25} color="white" />
               <Text style={styles.drawerRouteText}>Notification</Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -165,9 +245,8 @@ const SideMenu = props => {
               onPress={() => {
                 navigateToScreen('Profile');
               }}>
-              <AntDesign name="infocirlceo" size={25} color="white" />
               <Text style={styles.drawerRouteText}>Profile</Text>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
           </ScrollView>
           <View style={styles.footerContainer}>
             <View style={styles.bottomSection}>
@@ -178,7 +257,7 @@ const SideMenu = props => {
                     signOut();
                   }}>
                   <AntDesign name="logout" size={25} color="white" />
-                  <Text style={styles.drawerRouteText}>Log Out</Text>
+                  <Text style={styles.drawerRouteText}>COPYRIGHT 2023 AL HARAM IMPORT & EXPORT CO. ALL RIGHTS RESERVED.</Text>
                 </TouchableOpacity>
               </View>
               <View style={styles.versionInfo}>

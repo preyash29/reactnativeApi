@@ -6,9 +6,8 @@ const {width} = Dimensions.get('window');
 export const drawerScreenOptions = {
   drawerStyle: {
     backgroundColor: 'transparent',
-    width: width,
-    // headerShown: true, // Show the header
-    // headerTitle: '',
+    width: width 
+   
   },
   overlayColor: 'transparent',
   drawerType: 'front',

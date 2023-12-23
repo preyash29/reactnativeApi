@@ -9,12 +9,15 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderRadius: 3,
-    backgroundColor: active ? 'black' : 'transparent',
+    // backgroundColor: active ? 'black' : 'transparent',
   }),
   drawerRouteText: {
-    letterSpacing: 0.8,
-    marginLeft: 10,
-    color: 'white',
+    letterSpacing: 0.3,
+    // marginLeft: 10,
+    color: 'black',
+    fontSize:18,
+    fontWeight:'bold'
+    
   },
   itemContainer: {
     flex: 0.8,
@@ -27,11 +30,11 @@ const styles = StyleSheet.create({
   },
   versionInfo: {marginBottom: 5},
   logoutContainer: {
-    borderTopColor: 'white',
+    borderTopColor: 'black',
     borderTopWidth: 0.5,
   },
   versionText: {
-    color: 'white',
+    color: 'black',
     textAlign: 'center',
     fontSize: 12,
   },

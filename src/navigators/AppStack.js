@@ -80,9 +80,6 @@ const Tabs = () => (
      <Tab.Screen name="Category" component={CategoryStack} options={{ headerShown: false }} />
     <Tab.Screen name="Notification" component={NotificationStack} options={{ headerShown: false }} />
     <Tab.Screen name="Profile" component={ProfileStack} options={{ headerShown: false }} />
-
-    
-
     {/* Add more tabs/screens as needed */}
   </Tab.Navigator>
 );
