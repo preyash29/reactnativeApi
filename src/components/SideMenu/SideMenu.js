@@ -159,9 +159,9 @@ const SideMenu = props => {
               <Text style={styles.drawerRouteText}>HOME</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={styles.drawerItem(index === 0)}
+              style={styles.drawerItem(index === 1)}
               onPress={() => {
-                navigateToScreen('Home');
+                navigateToScreen('ChangeLanguage');
               }}>
               <Text style={styles.drawerRouteText}>CHANGE LANGUAGE</Text>
             </TouchableOpacity>
@@ -257,7 +257,7 @@ const SideMenu = props => {
                     signOut();
                   }}>
                   <AntDesign name="logout" size={25} color="white" />
-                  <Text style={styles.drawerRouteText}>COPYRIGHT 2023 AL HARAM IMPORT & EXPORT CO. ALL RIGHTS RESERVED.</Text>
+                  <Text style={styles.copyRightText}>COPYRIGHT © 2023 AL HARAM IMPORT & EXPORT CO. ALL RIGHTS RESERVED.</Text>
                 </TouchableOpacity>
               </View>
               <View style={styles.versionInfo}>

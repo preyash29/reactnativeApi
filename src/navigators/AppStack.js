@@ -8,6 +8,8 @@ import {
   drawerScreenOptions,
   appStackHeaderOptions,
   appStackScreenOptions,
+  appStackLangOptions,
+  appStackLangHeaderOptions
 } from '../config/navigationConfig';
 
 import Home from '../components/Home/Home';
@@ -15,6 +17,8 @@ import Category from '../components/Category/Category';
 import Notification from '../components/Notification/Notification';
 import Profile from '../components/Profile/Profile'
 import SideMenu from '../components/SideMenu/SideMenu';
+import ChangeLanguage from '../components/ChangeLanguage/ChangeLanguage';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
 const AppStack = createNativeStackNavigator();
 const HomeStack = () => (
@@ -73,6 +77,23 @@ const ProfileStack = () => (
     />
   </AppStack.Navigator>
 );
+const ChangeLanguageStack = ({ navigation }) => (
+
+  <AppStack.Navigator
+    initialRouteName={'ChangeLanguage'}
+    screenOptions={{
+      ...appStackLangOptions,
+      // headerTitle: '',
+      headerTitle: 'Select Language', 
+      
+    }}>
+    <AppStack.Screen
+      name="ChangeLanguage"
+      component={ChangeLanguage}
+      options={appStackLangHeaderOptions}
+    />
+  </AppStack.Navigator>
+);
 const Tab = createBottomTabNavigator();
 const Tabs = () => (
   <Tab.Navigator>
@@ -88,14 +109,20 @@ const Drawer = createDrawerNavigator();
 
 export default function AppContainer() {
   return (
-    
+      
       <Drawer.Navigator
         drawerContent={props => <SideMenu navigation={props.navigation} {...props} />}
         defaultStatus={'closed'}
-        screenOptions={drawerScreenOptions}
+        screenOptions={{
+          ...drawerScreenOptions,
+          gestureEnabled: true,
+          drawerOverlayColor: 'transparent', 
+        }}
         drawerPosition={'left'}
         initialRouteName={'Tabs'}>
         <Drawer.Screen name="Tabs" component={Tabs} />
+        <Drawer.Screen name="ChangeLanguage" component={ChangeLanguageStack} />
+
         {/* Add more drawer screens as needed */}
       </Drawer.Navigator>
    

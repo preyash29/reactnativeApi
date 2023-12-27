@@ -47,6 +47,9 @@ const styles = StyleSheet.create({
   footerContainer: {
     flex: 0.2,
   },
+  copyRightText:{
+    fontSize:12
+  }
 });
 
 export default styles;
