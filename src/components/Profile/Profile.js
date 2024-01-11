@@ -1,25 +1,12 @@
-import React from 'react';
-import {Text, SafeAreaView, Pressable, View} from 'react-native';
-import styles from './style';
-import commonStyles from '../../theme/commonStyles';
-const Category = props => {
-  const navigation = props.navigation;
+import { View, Text } from 'react-native'
+import React from 'react'
 
+const Profile = () => {
   return (
-    <SafeAreaView style={commonStyles.flex}>
-      <View style={[commonStyles.containerPadding, styles.container]}>
-        <Text style={styles.screenText}>Profile screen</Text>
-        <Pressable
-          onPress={() => navigation.navigate('Category')}
-          style={styles.aboutBtn}>
-          <Text style={styles.aboutBtnText}>Category</Text>
-        </Pressable>
-       
-      </View>
-     
-    </SafeAreaView>
-    
-  );
-};
+    <View>
+      <Text>Profile</Text>
+    </View>
+  )
+}
 
-export default Category;
+export default Profile

@@ -9,6 +9,7 @@ import {name as appName} from './app.json';
 import {Provider} from 'react-redux';
 import defaultStore from './src/redux/store/store';
 import {PersistGate} from 'redux-persist/integration/react';
+import './src/i18n/i18n.config'
 
 const {store, persistor} = defaultStore();
 

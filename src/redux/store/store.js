@@ -1,37 +1,38 @@
-import {combineReducers} from 'redux';
-import {configureStore} from '@reduxjs/toolkit';
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
-import appReducers from '../reducers';
-import {persistStore, persistReducer,FLUSH,
-  REHYDRATE,
-  PAUSE,
-  PERSIST,
-  PURGE,
-  REGISTER,} from 'redux-persist';
-import AsyncStorage from '@react-native-async-storage/async-storage'; // defaults to localStorage for web and AsyncStorage for react-native
+import { persistStore, persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from 'redux-persist';
+// import authReducer from '../reducers/Auth/AuthSlice/authSlice';
+// import loginReducer from '../reducers/Auth/AuthSlice/loginSlice';
+// import registerReducer from '../reducers/Auth/AuthSlice/registerSlice';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import rootReducer from './rootReducer';
 
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
 };
 
-const rootReducer = combineReducers(appReducers);
+const store = combineReducers({
+  reducer: rootReducer,
+ 
+});
+
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 const defaultStore = () => {
   let store = configureStore({
     reducer: persistedReducer,
-    // middleware: [logger],
-    middleware: getDefaultMiddleware =>
-    getDefaultMiddleware({
-      serializableCheck: {
-        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-      },
-    }),
+    middleware: (getDefaultMiddleware) => [
+      ...getDefaultMiddleware({
+        serializableCheck: {
+          ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+        },
+      }),
+      logger,
+    ],
   });
   let persistor = persistStore(store);
-  return {store, persistor};
+  return { store, persistor };
 };
 
 export default defaultStore;
-
