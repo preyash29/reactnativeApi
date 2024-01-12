@@ -1,0 +1,5411 @@
+{
+	"info": {
+		"_postman_id": "11fee582-d314-49d0-9884-cca76bc4d398",
+		"name": "AL-Haram",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32129213"
+	},
+	"item": [
+		{
+			"name": "AL-HARAM create user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "mahesha1dfdsf@setblue.com",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "mahesha",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "mahesha",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "mahesha@123",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/createUser",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM customer Profile update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "customer_id",
+							"value": "970",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ashok@12345",
+							"description": "current password",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "ashok@12345",
+							"description": "new password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/customerProfileUpdateMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"customerProfileUpdateMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "mahesh@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "mahesh@123",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://alharamstores.com/rest/V1/api/loginUser",
+					"protocol": "https",
+					"host": [
+						"alharamstores",
+						"com"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"loginUser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "ashok@setblue.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ashok@123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://9sarees.com/rest/V1/api/loginUser",
+							"protocol": "https",
+							"host": [
+								"9sarees",
+								"com"
+							],
+							"path": [
+								"rest",
+								"V1",
+								"api",
+								"loginUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Oct 2020 10:10:22 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "PHPSESSID=b561abd8296784270d51fa0c1b9d6410; expires=Mon, 12-Oct-2020 11:10:21 GMT; Max-Age=3600; path=/; domain=9sarees.com; secure; HttpOnly"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=edge"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Server-Powered-By",
+							"value": "Engintron"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":1,\"data\":{\"id\":14,\"group_id\":1,\"created_at\":\"2020-09-29 12:10:00\",\"updated_at\":\"2020-10-10 07:00:53\",\"created_in\":\"ENGLISH\",\"email\":\"ashok@setblue.com\",\"firstname\":\"ashok\",\"lastname\":\"stsetbluering\",\"store_id\":1,\"website_id\":1,\"addresses\":[],\"disable_auto_group_change\":0,\"extension_attributes\":{\"is_subscribed\":true},\"token\":\"vf7bb8br15cvkuutdc3sgoh53aftq101\"},\"message\":\"Success\"}"
+				}
+			]
+		},
+		{
+			"name": "AL-HARAM Mobile OTP create acccount",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobile",
+							"value": "+966550369258",
+							"description": "registretion time required all field",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "soneji@123",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "d",
+							"description": "login API required mobile,otptype,store_id",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "s",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "de@setblue.com",
+							"type": "text"
+						},
+						{
+							"key": "otptype",
+							"value": "register",
+							"description": "register,login,forgot,google,facebook,apple,resend",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "auth",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "resend",
+							"value": "register",
+							"description": "register,login,forgot",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://alharamstores.com/rest/arabic/V1/api/mobileOtpRegistrationMethod",
+					"protocol": "https",
+					"host": [
+						"alharamstores",
+						"com"
+					],
+					"path": [
+						"rest",
+						"arabic",
+						"V1",
+						"api",
+						"mobileOtpRegistrationMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Mobile OTP Verify",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobilenumber",
+							"value": "+966550987654",
+							"type": "text"
+						},
+						{
+							"key": "otptype",
+							"value": "login",
+							"description": "register,login,forgot",
+							"type": "text"
+						},
+						{
+							"key": "otpcode",
+							"value": "7985",
+							"type": "text"
+						},
+						{
+							"key": "oldmobile",
+							"value": "",
+							"description": "optional",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://alharamstores.com/rest/arabic/V1/api/mobileOtpVerifyCreateMethod",
+					"protocol": "https",
+					"host": [
+						"alharamstores",
+						"com"
+					],
+					"path": [
+						"rest",
+						"arabic",
+						"V1",
+						"api",
+						"mobileOtpVerifyCreateMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Mobile password update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobilenumber",
+							"value": "08238155246",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ashok@1234",
+							"description": "NEW PASSWORD",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/resetPasswordMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"resetPasswordMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Login with mobile number and password",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobilenumber",
+							"value": "963820064",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ashok@12345",
+							"description": "NEW PASSWORD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://beta.alharamstores.com/rest/V1/api/loginWithMobilePasswordMethod",
+					"protocol": "https",
+					"host": [
+						"beta",
+						"alharamstores",
+						"com"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"loginWithMobilePasswordMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Reset password",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "ashok@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/resetpass",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"resetpass"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-Haram categories list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_id",
+							"value": "2",
+							"description": "arabic",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"description": "english",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/all/V1/api/getCategories",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"all",
+						"V1",
+						"api",
+						"getCategories"
+					],
+					"query": [
+						{
+							"key": "store",
+							"value": "arabic",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Categories product list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "13",
+							"description": "13,288",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"description": "1",
+							"type": "text"
+						},
+						{
+							"key": "PageSize",
+							"value": "20",
+							"description": "15",
+							"type": "text"
+						},
+						{
+							"key": "CurPage",
+							"value": "1",
+							"description": "1",
+							"type": "text"
+						},
+						{
+							"key": "customer_id",
+							"value": "14",
+							"description": "default 0",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "",
+							"description": "5437",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"description": "5468",
+							"type": "text"
+						},
+						{
+							"key": "price_from",
+							"value": "",
+							"description": "0",
+							"type": "text"
+						},
+						{
+							"key": "price_to",
+							"value": "",
+							"description": "140",
+							"type": "text"
+						},
+						{
+							"key": "search",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "sort_by",
+							"value": "position",
+							"description": "position/price/name",
+							"type": "text"
+						},
+						{
+							"key": "sort_action",
+							"value": "ASC",
+							"description": "DESC/ASC",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/getProductByCateId",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"getProductByCateId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Search API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "50q7yb3xijihhnhtx3qqrpuqepmmu1g0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "search_key",
+							"value": "dfgdfgdgdgdfgdfg",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "2",
+							"description": "1/2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/searchCategoryproduct",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"searchCategoryproduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-Haram sku get product details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "q654dt849l14iu8fn2cnkefn8617d1eb",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "PA01287",
+							"description": "Test045/SW6100CV-6102",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "customer_id",
+							"value": "14",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "5453",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "5467",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/default/V1/api/getProductBySkuMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"api",
+						"getProductBySkuMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-Haram Category banner section",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_id",
+							"value": "1",
+							"description": "1/2",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "4",
+							"description": "50001-Yellow-L/Test011",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://alharamstores.com/rest/V1/api/getCategoryBanner",
+					"protocol": "https",
+					"host": [
+						"alharamstores",
+						"com"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"getCategoryBanner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-Haram Home page",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_id",
+							"value": "1",
+							"description": "1/2",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "tqjtzodjye4wl0xp0y4ckrf7x5a85zxs",
+							"type": "text"
+						},
+						{
+							"key": "dev",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "device_version",
+							"value": "1.0.32",
+							"type": "text"
+						},
+						{
+							"key": "device_type",
+							"value": "ios",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/getHomeSliderMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"getHomeSliderMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mobile APP Home Page Sync to database AL-Haram",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_id",
+							"value": "2",
+							"description": "1/2",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "ljfpuzf3zd9oc5irax20gxqkko8mcmxl",
+							"type": "text"
+						},
+						{
+							"key": "dev",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "device_version",
+							"value": "16",
+							"type": "text"
+						},
+						{
+							"key": "device_type",
+							"value": "android",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/mobileAppHomeSyncMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"mobileAppHomeSyncMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Add/Remove to wishlist",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer_id",
+							"value": "58755",
+							"description": "14",
+							"type": "text"
+						},
+						{
+							"key": "productId",
+							"value": "39684",
+							"description": "93",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "true",
+							"description": "true/false",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://alharamstores.com/rest/V1/api/addWishlistMethod",
+					"protocol": "https",
+					"host": [
+						"alharamstores",
+						"com"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"addWishlistMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Wishlist collection list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer_id",
+							"value": "14",
+							"description": "14",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"description": "93",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "false",
+							"description": "true/false",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/getWishlistCollectionMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"getWishlistCollectionMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM categories filter",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "24",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/getCategoryFilterMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"getCategoryFilterMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-Haram AddToCart",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_id",
+							"value": "1",
+							"description": "1/2",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "6710",
+							"description": "50001-Yellow-L/Test011",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "3qjfsjd7om463qt2z7w9f1l6wagnxktv",
+							"type": "text"
+						},
+						{
+							"key": "product_type",
+							"value": "configurable",
+							"description": "simple/configurable",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "5438",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "custom_option",
+							"value": "",
+							"description": "91,344",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://alharamstores.com/rest/V1/api/addToCartMethod",
+					"protocol": "https",
+					"host": [
+						"alharamstores",
+						"com"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"addToCartMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM get cart Details",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "2eot7yzis034gya6vaahguvfulw5oyvu",
+							"description": "l0uzwjqlh5qhyuewb2svzv6m1ajwienr",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/getCartMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"getCartMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM get quote_id(create cart)",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "serc3zd72xil9oaj2jcy6klaaf7xvqlc",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/createCartMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"createCartMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM get cart total items",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "f3mun3f3n7as17s1dghke0fqa8dxz564",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "xwu9u73fuzqably8q9jq00sogd57ms9j",
+							"description": "l0uzwjqlh5qhyuewb2svzv6m1ajwienr",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "56",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/cartItemCountMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"cartItemCountMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM get Customer Address List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "f3mun3f3n7as17s1dghke0fqa8dxz564",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer_id",
+							"value": "1612",
+							"description": "only pass customer_id to display all address list",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "test",
+							"description": "Ashok",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "sdfsdf",
+							"type": "text"
+						},
+						{
+							"key": "country_id",
+							"value": "SA",
+							"description": "IN,SA",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "702",
+							"description": "region code or region name",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Jeddah",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "dsfsdf",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "dsfsdf",
+							"type": "text"
+						},
+						{
+							"key": "address3",
+							"value": "dsfsdf",
+							"type": "text"
+						},
+						{
+							"key": "postcode",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "telephone",
+							"value": "823815546",
+							"type": "text"
+						},
+						{
+							"key": "set_is_default_billing",
+							"value": "1",
+							"description": "0/1",
+							"type": "text"
+						},
+						{
+							"key": "set_is_default_shipping",
+							"value": "1",
+							"description": "0/1",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "address_id",
+							"value": "927",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://alharamstores.com/rest/default/V1/api/customerAddressListMethod",
+					"protocol": "https",
+					"host": [
+						"alharamstores",
+						"com"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"api",
+						"customerAddressListMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM get Customer Address Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "f3mun3f3n7as17s1dghke0fqa8dxz564",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "address_id",
+							"value": "380",
+							"type": "text"
+						},
+						{
+							"key": "customer_id",
+							"value": "709",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/default/V1/api/customerAddressDeleteMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"api",
+						"customerAddressDeleteMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM get Customer Address List Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "f3mun3f3n7as17s1dghke0fqa8dxz564",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "t50mepr7h80b8vqpzmysmhbe59vbrda3",
+							"description": "l0uzwjqlh5qhyuewb2svzv6m1ajwienr",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "56",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/customerAddressMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"customerAddressMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM update cart item",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "50q7yb3xijihhnhtx3qqrpuqepmmu1g0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "item_id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "quote_id",
+							"value": "9",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "token",
+							"value": "yvxd1xaoc8unei85nrjgnyakjgsaqgcj",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/updateCartItemMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"updateCartItemMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Remove cart item",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "item_id",
+							"value": "19026",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "bcln3imzh7kmo9tt76h59ephdv484hgl",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/removeCartItemMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"removeCartItemMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Coupen code list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "sknczd8qjywixpl6fq16qea43y3l53z5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/coupenListMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"coupenListMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Coupen Action",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "ympst2117snnq1b4fp41fpo8lwguwv4v",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "1",
+							"description": "1=true/0=false",
+							"type": "text"
+						},
+						{
+							"key": "coupen_code",
+							"value": "rm10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/coupenActionMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"coupenActionMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Coupen Action Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "gz2vlmfyh6hdrudii14wdmeiscc8fubd",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "gz2vlmfyh6hdrudii14wdmeiscc8fubd",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "0",
+							"description": "1=true/0=false",
+							"type": "text"
+						},
+						{
+							"key": "coupen_code",
+							"value": "test005",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/V1/carts/6924/coupons/test001",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"V1",
+						"carts",
+						"6924",
+						"coupons",
+						"test001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Shipping method",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "28nwc67twoll4y7u5tg7q9b0zzmn7n9q",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "addressId",
+							"value": "7090",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/shippingListMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"shippingListMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Selected Shipping method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "vus3ebok3z9tdqiiqq5qwbq9728xzjuv",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \"addressInformation\": {\r\n      \"shipping_address\": {\r\n       \"id\": 597,\r\n    \"customer_id\": 970,\r\n    \"region\": {\r\n        \"region_code\": \"JED\",\r\n        \"region\": \"Western and Southern Regions\",\r\n        \"region_id\": 703\r\n    },\r\n    \"region_id\": 703,\r\n    \"country_id\": \"SA\",\r\n    \"street\": [\r\n        \"near al-haram store\"\r\n    ],\r\n    \"region_code\": \"JED\",\r\n    \"telephone\": \"823815546\",\r\n    \"postcode\": \"20001\",\r\n    \"city\": \"Jeddah\",\r\n    \"firstname\": \"ashok\",\r\n    \"lastname\": \"devloper\",\r\n    \"default_shipping\": true,\r\n    \"default_billing\": true,\r\n    \"region_name\": \"Western and Southern Regions\",\r\n    \"country_name\": \"Saudi Arabia\",\r\n    \"address1\": \"near al-haram store\",\r\n    \"address2\": \"\",\r\n    \"address3\": \"\",\r\n    \"city_display\": \"Jeddah\"\r\n  },\r\n  \"billing_address\": {\r\n    \"id\": 597,\r\n    \"customer_id\": 970,\r\n    \"region\": {\r\n        \"region_code\": \"JED\",\r\n        \"region\": \"Western and Southern Regions\",\r\n        \"region_id\": 703\r\n    },\r\n    \"region_id\": 703,\r\n    \"country_id\": \"SA\",\r\n    \"street\": [\r\n        \"near al-haram store\"\r\n    ],\r\n    \"region_code\": \"JED\",\r\n    \"telephone\": \"823815546\",\r\n    \"postcode\": \"20001\",\r\n    \"city\": \"Jeddah\",\r\n    \"firstname\": \"ashok\",\r\n    \"lastname\": \"devloper\",\r\n    \"default_shipping\": true,\r\n    \"default_billing\": true,\r\n    \"region_name\": \"Western and Southern Regions\",\r\n    \"country_name\": \"Saudi Arabia\",\r\n    \"address1\": \"near al-haram store\",\r\n    \"address2\": \"\",\r\n    \"address3\": \"\",\r\n    \"city_display\": \"Jeddah\"\r\n  },\r\n  \"shipping_carrier_code\": \"webkularamex\",\r\n  \"shipping_method_code\": \"ONP\"\r\n  }, \"custom\": {\r\n    \"token\":\"ma3zepwn705061od92b5y39my8dmzoia\",\r\n    \"store_id\":1\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/selectedShippingListMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"selectedShippingListMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Selected Payment Method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "fo8qec3geelai27jo2hlcu888euiuwkq",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"paymentMethod\":\"cashondelivery\",\r\n         \"billing_address\": {\r\n    \"id\": 597,\r\n    \"customer_id\": 970,\r\n    \"region\": {\r\n        \"region_code\": \"JED\",\r\n        \"region\": \"Western and Southern Regions\",\r\n        \"region_id\": 703\r\n    },\r\n    \"region_id\": 703,\r\n    \"country_id\": \"SA\",\r\n    \"street\": [\r\n        \"near al-haram store\"\r\n    ],\r\n    \"region_code\": \"JED\",\r\n    \"telephone\": \"823815546\",\r\n    \"postcode\": \"20001\",\r\n    \"city\": \"Jeddah\",\r\n    \"firstname\": \"ashok\",\r\n    \"lastname\": \"devloper\",\r\n    \"default_shipping\": true,\r\n    \"default_billing\": true,\r\n    \"region_name\": \"Western and Southern Regions\",\r\n    \"country_name\": \"Saudi Arabia\",\r\n    \"address1\": \"near al-haram store\",\r\n    \"address2\": \"\",\r\n    \"address3\": \"\",\r\n    \"city_display\": \"Jeddah\"\r\n  },\r\n    \"custom\": {\r\n        \"token\":\"31ua8tpfo947zk0i0eqtpfgs61ntiqk9\",\r\n        \"store_id\":1\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/setPaymentMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"setPaymentMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Selected Payment Method Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "fo8qec3geelai27jo2hlcu888euiuwkq",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cartId\":\"6924\",\r\n    \"paymentMethod\":\"cashondelivery\",\r\n        \"billingAddress\":{\r\n            \"countryId\":\"SA\",\r\n            \"regionId\":\"703\",\r\n            \"regionCode\":\"JED\",\r\n            \"region\":\"Western and Southern Regions\",\r\n            \"street\":[\"saudi arabia\"],\r\n            \"telephone\":\"823815546\",\r\n            \"postcode\":\"20001\",\r\n            \"city\":\"Jeddah\",\r\n            \"firstname\":\"Ashok\",\r\n            \"lastname\":\"zinzala\"\r\n        }\r\n    }"
+				},
+				"url": {
+					"raw": "{{url}}/rest/default/V1/carts/mine/set-payment-information",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"carts",
+						"mine",
+						"set-payment-information"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Store Pickup list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "fo8qec3geelai27jo2hlcu888euiuwkq",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/storePickupMethodlist",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"storePickupMethodlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Order Place",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jpnchmacba2a3thrp8fnoo262v34oo00",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"paymentMethod\": \"webkularamex\",\r\n   \"billing_address\": {\r\n    \"id\": 597,\r\n    \"customer_id\": 970,\r\n    \"region\": {\r\n        \"region_code\": \"JED\",\r\n        \"region\": \"Western and Southern Regions\",\r\n        \"region_id\": 703\r\n    },\r\n    \"region_id\": 703,\r\n    \"country_id\": \"SA\",\r\n    \"street\": [\r\n        \"near al-haram store\"\r\n    ],\r\n    \"region_code\": \"JED\",\r\n    \"telephone\": \"823815546\",\r\n    \"postcode\": \"20001\",\r\n    \"city\": \"Jeddah\",\r\n    \"firstname\": \"ashok\",\r\n    \"lastname\": \"devloper\",\r\n    \"default_shipping\": true,\r\n    \"default_billing\": true,\r\n    \"region_name\": \"Western and Southern Regions\",\r\n    \"country_name\": \"Saudi Arabia\",\r\n    \"address1\": \"near al-haram store\",\r\n    \"address2\": \"\",\r\n    \"address3\": \"\",\r\n    \"city_display\": \"Jeddah\"\r\n  },\"custom\": {\r\n        \"token\":\"3vwwthmt8arjsi2t5k9broqlso2mbsw3\",\r\n        \"store_id\":1,\r\n        \"email\":\"ashok0@gmail.com\",\r\n        \"name\":\"name\",\r\n        \"customer_id\":970,\r\n        \"subtotal\":120,\r\n        \"shipping\":120,\r\n        \"grand_total\":120,\r\n        \"storepickup_identifier\":\"\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/orderPlaceMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"orderPlaceMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Order online payment response",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jpnchmacba2a3thrp8fnoo262v34oo00",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order_id",
+							"value": "3090",
+							"description": "respon_id",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "fail",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/orderStatusUpdateMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"orderStatusUpdateMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Order list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer_id",
+							"value": "970",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/orderListMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"orderListMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Order View",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order_id",
+							"value": "531",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "view_option",
+							"value": "ordered",
+							"description": "ordered,invoiced,shipped,refunded",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/orderViewMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"orderViewMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Order Invoiced",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order_id",
+							"value": "531",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "option",
+							"value": "shipped",
+							"description": "ordered,invoiced,shipped,refunded",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/orderInvoicedMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"orderInvoicedMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Order Refund",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "bss-option",
+							"value": "Color/Size Mismatch",
+							"type": "text"
+						},
+						{
+							"key": "bss-radio",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "bss-refund-reason",
+							"value": "this product demage",
+							"type": "text"
+						},
+						{
+							"key": "bss-refund-order-id",
+							"value": "000000068",
+							"description": "000006",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/orderRefundMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"orderRefundMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Order Reorder",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "vz11ybb36c9mhstvx73shwh4qqkwmhjs",
+							"type": "text"
+						},
+						{
+							"key": "order_id",
+							"value": "1030",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/orderReorderMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"orderReorderMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Order Status changes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order_id",
+							"value": "2000005370",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "processing",
+							"type": "text"
+						},
+						{
+							"key": "dev",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "shipping",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/orderStatusMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"orderStatusMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM urway payment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "trackid",
+							"value": "000000061",
+							"type": "text"
+						},
+						{
+							"key": "terminalId",
+							"value": "haramcent",
+							"type": "text"
+						},
+						{
+							"key": "customerEmail",
+							"value": "ashok0@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "merchantIp",
+							"value": "67.225.146.44",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "haram@URWAY_753",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "SAR",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "SA",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "udf5",
+							"value": "Test5",
+							"type": "text"
+						},
+						{
+							"key": "udf3",
+							"value": "Test3",
+							"type": "text"
+						},
+						{
+							"key": "udf4",
+							"value": "Test4",
+							"type": "text"
+						},
+						{
+							"key": "udf1",
+							"value": "Test1",
+							"type": "text"
+						},
+						{
+							"key": "udf2",
+							"value": "Test2",
+							"type": "text"
+						},
+						{
+							"key": "requestHash",
+							"value": "603e56393480bb10687360896f1607d2aba1df05c279fa7781ae36d154223296",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://payments.urway-tech.com/URWAYPGService/transaction/jsonProcess/JSONrequest",
+					"protocol": "https",
+					"host": [
+						"payments",
+						"urway-tech",
+						"com"
+					],
+					"path": [
+						"URWAYPGService",
+						"transaction",
+						"jsonProcess",
+						"JSONrequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM stateDropdown",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "country_code",
+							"value": "sa",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/countryToStateMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"countryToStateMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM cityDropdown",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "state_code",
+							"value": "704",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/stateToCityMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"stateToCityMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Wallet Customer Transactions list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer_id",
+							"value": "970",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "current_page",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/walletTransactionsMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"walletTransactionsMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Wallet Customer Transaction Details",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer_id",
+							"value": "970",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "entity_id",
+							"value": "30",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/transactionDetailsMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"transactionDetailsMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM mobile OTP registration",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobile",
+							"value": "966550321463",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test@12345",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "devloper test",
+							"description": "1=true/0=false",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ashok0005@setblue.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest//V1/mobilelogin/account/create/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"",
+						"V1",
+						"mobilelogin",
+						"account",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Order Reports",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "from",
+							"value": "18-04-2022",
+							"type": "text"
+						},
+						{
+							"key": "to",
+							"value": "18-04-2022",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/orderReportMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"orderReportMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Order Reports getOrderReportMethod",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/rest/V1/api/getOrderReportMethod?from=15-Jun-2022&to=30-Jun-2022",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"getOrderReportMethod"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "15-Jun-2022"
+						},
+						{
+							"key": "to",
+							"value": "30-Jun-2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Order Credit Reports",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/rest/V1/api/getCreditReportMethod?from=10-06-2022&to=11-06-2022",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"getCreditReportMethod"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "10-06-2022"
+						},
+						{
+							"key": "to",
+							"value": "11-06-2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testing Categories product list Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "13",
+							"description": "13",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"description": "1",
+							"type": "text"
+						},
+						{
+							"key": "PageSize",
+							"value": "20",
+							"description": "15",
+							"type": "text"
+						},
+						{
+							"key": "CurPage",
+							"value": "1",
+							"description": "1",
+							"type": "text"
+						},
+						{
+							"key": "customer_id",
+							"value": "14",
+							"description": "default 0",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "",
+							"description": "5433",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"description": "5495",
+							"type": "text"
+						},
+						{
+							"key": "price_from",
+							"value": "",
+							"description": "0",
+							"type": "text"
+						},
+						{
+							"key": "price_to",
+							"value": "",
+							"description": "140",
+							"type": "text"
+						},
+						{
+							"key": "search",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "sort_by",
+							"value": "price",
+							"description": "position/price/name",
+							"type": "text"
+						},
+						{
+							"key": "sort_action",
+							"value": "ASC",
+							"description": "DESC/ASC",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/testConfigrationMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"testConfigrationMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testing",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "q654dt849l14iu8fn2cnkefn8617d1eb",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "0051",
+							"description": "Test045/SW6100CV-6102",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "customer_id",
+							"value": "14",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "5438",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/testConfigrationMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"testConfigrationMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testing Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "q654dt849l14iu8fn2cnkefn8617d1eb",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "0051",
+							"description": "Test045/SW6100CV-6102",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "customer_id",
+							"value": "14",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "5438",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/testPickupMethodlist",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"testPickupMethodlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test AL-HARAM get cart Details Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "q654dt849l14iu8fn2cnkefn8617d1eb",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/rest/V1/carts/56/totals",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"carts",
+						"56",
+						"totals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test AL-HARAM get cart Details Copy 2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "q654dt849l14iu8fn2cnkefn8617d1eb",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/rest/arabic/V1/products?searchCriteria[filterGroups][0][filters][0][field]=entity_id&searchCriteria[filterGroups][0][filters][0][value]=186&searchCriteria[filterGroups][0][filters][0][condition_type]=eq",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"arabic",
+						"V1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "searchCriteria[filterGroups][0][filters][0][field]",
+							"value": "entity_id"
+						},
+						{
+							"key": "searchCriteria[filterGroups][0][filters][0][value]",
+							"value": "186"
+						},
+						{
+							"key": "searchCriteria[filterGroups][0][filters][0][condition_type]",
+							"value": "eq"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Magento  update cart item",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "50q7yb3xijihhnhtx3qqrpuqepmmu1g0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cartItem\": {\r\n    \"item_id\": 5,\r\n    \"qty\": 2,\r\n    \"quote_id\": \"9\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/carts/mine/items",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"carts",
+						"mine",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM Remove cart item Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "q654dt849l14iu8fn2cnkefn8617d1eb",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/rest/arabic/V1/products?searchCriteria[filterGroups][0][filters][0][field]=entity_id&searchCriteria[filterGroups][0][filters][0][value]=186&searchCriteria[filterGroups][0][filters][0][condition_type]=eq",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"arabic",
+						"V1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "searchCriteria[filterGroups][0][filters][0][field]",
+							"value": "entity_id"
+						},
+						{
+							"key": "searchCriteria[filterGroups][0][filters][0][value]",
+							"value": "186"
+						},
+						{
+							"key": "searchCriteria[filterGroups][0][filters][0][condition_type]",
+							"value": "eq"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wishlist",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customerId",
+							"value": "14",
+							"description": "1/2",
+							"type": "text"
+						},
+						{
+							"key": "productId",
+							"value": "93",
+							"description": "93",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/getWishlistMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"getWishlistMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shipping method Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "50q7yb3xijihhnhtx3qqrpuqepmmu1g0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "sknczd8qjywixpl6fq16qea43y3l53z5",
+							"description": "5651",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "1",
+							"description": "1=true/0=false",
+							"type": "text"
+						},
+						{
+							"key": "coupen_code",
+							"value": "test005",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/carts/5651/estimate-shipping-methods-by-address-id?addressId=500",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"carts",
+						"5651",
+						"estimate-shipping-methods-by-address-id"
+					],
+					"query": [
+						{
+							"key": "addressId",
+							"value": "500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customer\": {\r\n    \"email\": \"dharmesh1212@setblue.com\",\r\n    \"firstname\": \"dharmesh\",\r\n    \"lastname\": \"stsetbluering\"\r\n  },\r\n    \"password\": \"dharmesh@123\"\r\n}"
+				},
+				"url": {
+					"raw": "https://9sarees.com/rest/V1/customers",
+					"protocol": "https",
+					"host": [
+						"9sarees",
+						"com"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"customers"
+					],
+					"query": [
+						{
+							"key": "fieldName",
+							"value": "customerId",
+							"description": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer token get",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"ashok@setblue.com\",\r\n\"password\": \"ashok@123\"\r\n}"
+				},
+				"url": {
+					"raw": "https://9sarees.com/rest/default/V1/integration/customer/token",
+					"protocol": "https",
+					"host": [
+						"9sarees",
+						"com"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"integration",
+						"customer",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a cart for a logged-in customer Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "f3mun3f3n7as17s1dghke0fqa8dxz564",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://9sarees.com/rest/default/V1/carts/mine",
+					"protocol": "https",
+					"host": [
+						"9sarees",
+						"com"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"carts",
+						"mine"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a simple product to a cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "s1x4k1oizt906phfn4nkm1e0cu8u9bg7",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cartItem\": {\r\n    \"sku\": \"apisimple\",\r\n    \"qty\": 1,\r\n    \"quote_id\": \"56\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://9sarees.com/rest/default/V1/carts/mine/items",
+					"protocol": "https",
+					"host": [
+						"9sarees",
+						"com"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"carts",
+						"mine",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a configurable product to a cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "f3mun3f3n7as17s1dghke0fqa8dxz564",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cartItem\": {\r\n    \"sku\": \"Test048\",\r\n    \"qty\": 1,\r\n    \"quote_id\": \"56\",\r\n    \"product_option\": {\r\n      \"extension_attributes\": {\r\n        \"configurable_item_options\": [\r\n          {\r\n            \"option_id\": \"93\",\r\n            \"option_value\": 5456\r\n          },\r\n          {\r\n            \"option_id\": \"145\",\r\n            \"option_value\": 5450\r\n          }\r\n        ]\r\n      }\r\n    }\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://9sarees.com/rest/V1/carts/mine/items",
+					"protocol": "https",
+					"host": [
+						"9sarees",
+						"com"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"carts",
+						"mine",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-HARAM test search",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "state_code",
+							"value": "704",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/stateToCityMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"stateToCityMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-Haram configration option price",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "SW6100CV-6102",
+							"description": "Test045/SW6100CV-6102",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "5465",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "5454",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/getOptionPriceMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"getOptionPriceMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-Haram Mobile categories section",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_id",
+							"value": "1",
+							"description": "english",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/getMobileCategoriesList",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"getMobileCategoriesList"
+					],
+					"query": [
+						{
+							"key": "store",
+							"value": "arabic",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product configration option",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "50q7yb3xijihhnhtx3qqrpuqepmmu1g0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"ashok@setblue.com\",\r\n\"password\": \"ashok@123\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}/rest/default/V1/configurable-products/:sku/options/all",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"configurable-products",
+						":sku",
+						"options",
+						"all"
+					],
+					"variable": [
+						{
+							"key": "sku",
+							"value": "202122"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "resetpassword",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/rest/all/V1/api/getCategories",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"all",
+						"V1",
+						"api",
+						"getCategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sku get product details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "50q7yb3xijihhnhtx3qqrpuqepmmu1g0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{url}}/rest/default/V1/products/GK6288",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"products",
+						"GK6288"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sku get product details Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "50q7yb3xijihhnhtx3qqrpuqepmmu1g0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{url}}/rest/default/V1/products/GK6288",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"products",
+						"GK6288"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "configurable-products/Test048/children",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "50q7yb3xijihhnhtx3qqrpuqepmmu1g0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/configurable-products/202122/children",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"configurable-products",
+						"202122",
+						"children"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "configurable-products/Test048/children Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "50q7yb3xijihhnhtx3qqrpuqepmmu1g0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{url}}/rest/default/V1/products/202122",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"products",
+						"202122"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-Haram configration option price Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "SW6100CV-6102",
+							"description": "Test045/SW6100CV-6102",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "5465",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "5454",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/api/getOptionPriceMethod",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"api",
+						"getOptionPriceMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories id to get  lite",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "q654dt849l14iu8fn2cnkefn8617d1eb",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/rest/V1/categories/8/products",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"categories",
+						"8",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories id to display details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "q654dt849l14iu8fn2cnkefn8617d1eb",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/rest/default/V1/categories/8",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"categories",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test customer Profile update Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "50q7yb3xijihhnhtx3qqrpuqepmmu1g0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customer\": {\r\n    \"id\" : 970,\r\n    \"email\": \"ashok0@gmail.com\",\r\n    \"firstname\": \"Jane\",\r\n    \"lastname\": \"Doe\",\r\n    \"storeId\" : 1,\r\n    \"websiteId\" : 1\r\n  },\r\n  \"password\": \"1234567890\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}/rest/V1/customers/970",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"customers",
+						"970"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "layernavigation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "q654dt849l14iu8fn2cnkefn8617d1eb",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/rest/V1/categories/4/products",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"categories",
+						"4",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a simple product to a cart Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1f7rdblqckkbx86gxddtkswdhlqfcip9",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cartItem\": {\r\n    \"sku\": \"apisimple\",\r\n    \"qty\": 1,\r\n    \"quote_id\": \"56\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://9sarees.com/rest/default/V1/carts/mine/items",
+					"protocol": "https",
+					"host": [
+						"9sarees",
+						"com"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"carts",
+						"mine",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories filter Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "q654dt849l14iu8fn2cnkefn8617d1eb",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cartItem\": {\r\n    \"sku\": \"apisimple\",\r\n    \"qty\": 1,\r\n    \"quote_id\": \"56\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://9sarees.com/rest/arabic/V1/products/attributes/color/options",
+					"protocol": "https",
+					"host": [
+						"9sarees",
+						"com"
+					],
+					"path": [
+						"rest",
+						"arabic",
+						"V1",
+						"products",
+						"attributes",
+						"color",
+						"options"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MOBILE OTP",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "30e1ca34586283c295bb904960e990ee",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"recipients\": [\r\n        966550321460\r\n    ],\r\n    \"body\":\"devloper testing 321213\",\r\n    \"sender\":\"HaramCenter\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.taqnyat.sa/v1/messages",
+					"protocol": "https",
+					"host": [
+						"api",
+						"taqnyat",
+						"sa"
+					],
+					"path": [
+						"v1",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category filter product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "50q7yb3xijihhnhtx3qqrpuqepmmu1g0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/rest/default/V1/products/?searchCriteria[filter_groups][0][filters][0][field]=category_id&searchCriteria[filter_groups][0][filters][0][value]=13&searchCriteria[filter_groups][0][filters][0][condition_type]=eq&searchCriteria[filter_groups][1][filters][0][field]=color&searchCriteria[filter_groups][1][filters][0][value]=5437&searchCriteria[filter_groups][1][filters][0][condition_type]=eq&searchCriteria[filter_groups][2][filters][0][field]=size&searchCriteria[filter_groups][2][filters][0][value]=5464&searchCriteria[filter_groups][2][filters][0][condition_type]=eq&searchCriteria[filter_groups][3][filters][0][field]=price&searchCriteria[filter_groups][3][filters][0][value]=0&searchCriteria[filter_groups][3][filters][0][condition_type]=from&searchCriteria[filter_groups][4][filters][0][field]=price&searchCriteria[filter_groups][4][filters][0][value]=140&searchCriteria[filter_groups][4][filters][0][condition_type]=to&searchCriteria[pageSize]=1&searchCriteria[currentPage]=3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"products",
+						""
+					],
+					"query": [
+						{
+							"key": "searchCriteria[filter_groups][0][filters][0][field]",
+							"value": "category_id"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][0][value]",
+							"value": "13"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][0][condition_type]",
+							"value": "eq"
+						},
+						{
+							"key": "searchCriteria[filter_groups][1][filters][0][field]",
+							"value": "color"
+						},
+						{
+							"key": "searchCriteria[filter_groups][1][filters][0][value]",
+							"value": "5437"
+						},
+						{
+							"key": "searchCriteria[filter_groups][1][filters][0][condition_type]",
+							"value": "eq"
+						},
+						{
+							"key": "searchCriteria[filter_groups][2][filters][0][field]",
+							"value": "size"
+						},
+						{
+							"key": "searchCriteria[filter_groups][2][filters][0][value]",
+							"value": "5464"
+						},
+						{
+							"key": "searchCriteria[filter_groups][2][filters][0][condition_type]",
+							"value": "eq"
+						},
+						{
+							"key": "searchCriteria[filter_groups][3][filters][0][field]",
+							"value": "price"
+						},
+						{
+							"key": "searchCriteria[filter_groups][3][filters][0][value]",
+							"value": "0"
+						},
+						{
+							"key": "searchCriteria[filter_groups][3][filters][0][condition_type]",
+							"value": "from"
+						},
+						{
+							"key": "searchCriteria[filter_groups][4][filters][0][field]",
+							"value": "price"
+						},
+						{
+							"key": "searchCriteria[filter_groups][4][filters][0][value]",
+							"value": "140"
+						},
+						{
+							"key": "searchCriteria[filter_groups][4][filters][0][condition_type]",
+							"value": "to"
+						},
+						{
+							"key": "fields",
+							"value": "items[sku,name]",
+							"disabled": true
+						},
+						{
+							"key": "searchCriteria[pageSize]",
+							"value": "1"
+						},
+						{
+							"key": "searchCriteria[currentPage]",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category filter product Copy 2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "50q7yb3xijihhnhtx3qqrpuqepmmu1g0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://alharamstores.com/rest/V1/products/?searchCriteria[filter_groups][0][filters][0][field]=visibility&searchCriteria[filter_groups][0][filters][0][value]=4&searchCriteria[filter_groups][0][filters][0][condition_type]=eq&searchCriteria[filter_groups][0][filters][1][field]=name&searchCriteria[filter_groups][0][filters][1][value]=yellow&searchCriteria[filter_groups][0][filters][1][condition_type]=eq&searchCriteria[pageSize]=20&searchCriteria[currentPage]=1",
+					"protocol": "https",
+					"host": [
+						"alharamstores",
+						"com"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"products",
+						""
+					],
+					"query": [
+						{
+							"key": "searchCriteria[filter_groups][0][filters][0][field]",
+							"value": "visibility"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][0][value]",
+							"value": "4"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][0][condition_type]",
+							"value": "eq"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][1][field]",
+							"value": "name"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][1][value]",
+							"value": "yellow",
+							"description": "%25red%25"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][1][condition_type]",
+							"value": "eq"
+						},
+						{
+							"key": "searchCriteria[pageSize]",
+							"value": "20"
+						},
+						{
+							"key": "searchCriteria[currentPage]",
+							"value": "1"
+						},
+						{
+							"key": "fields",
+							"value": "items[sku,name]",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category filter product Copy 4",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "50q7yb3xijihhnhtx3qqrpuqepmmu1g0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://alharamstores.com/rest/V1/products/?searchCriteria[filter_groups][0][filters][0][field]=visibility&searchCriteria[filter_groups][0][filters][0][value]=4&searchCriteria[filter_groups][0][filters][0][condition_type]=eq&searchCriteria[filter_groups][0][filters][1][field]=name&searchCriteria[filter_groups][0][filters][1][value]=yellow&searchCriteria[filter_groups][0][filters][1][condition_type]=eq&searchCriteria[pageSize]=20&searchCriteria[currentPage]=1",
+					"protocol": "https",
+					"host": [
+						"alharamstores",
+						"com"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"products",
+						""
+					],
+					"query": [
+						{
+							"key": "searchCriteria[filter_groups][0][filters][0][field]",
+							"value": "visibility"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][0][value]",
+							"value": "4"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][0][condition_type]",
+							"value": "eq"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][1][field]",
+							"value": "name"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][1][value]",
+							"value": "yellow",
+							"description": "%25red%25"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][1][condition_type]",
+							"value": "eq"
+						},
+						{
+							"key": "searchCriteria[pageSize]",
+							"value": "20"
+						},
+						{
+							"key": "searchCriteria[currentPage]",
+							"value": "1"
+						},
+						{
+							"key": "fields",
+							"value": "items[sku,name]",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category filter product Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "q7zrq6qgifw118qqrdcx879k2k5y0v9j",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/rest/V1/search?searchCriteria[requestName]=advanced_search_container&searchCriteria[filter_groups][0][filters][0][field]=name&searchCriteria[filter_groups][0][filters][0][value]=shirt&searchCriteria[filter_groups][0][filters][0][condition_type]=like",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"search"
+					],
+					"query": [
+						{
+							"key": "searchCriteria[requestName]",
+							"value": "advanced_search_container"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][0][field]",
+							"value": "name"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][0][value]",
+							"value": "shirt"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][0][condition_type]",
+							"value": "like"
+						},
+						{
+							"key": "fields",
+							"value": "items[name]",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category filter product Copy 3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "50q7yb3xijihhnhtx3qqrpuqepmmu1g0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://alharamstores.com/rest/V1/products/?searchCriteria[filter_groups][0][filters][0][field]=category_id&searchCriteria[filter_groups][0][filters][0][value]=141&searchCriteria[filter_groups][0][filters][0][condition_type]=eq&searchCriteria[sortOrders][1][field]=price&searchCriteria[sortOrders][1][direction]=DESC&searchCriteria[pageSize]=20&searchCriteria[currentPage]=1&=&searchCriteria[filter_groups][2][filters][0][field]=name&searchCriteria[filter_groups][2][filters][0][value]=%25pink%25&searchCriteria[filter_groups][2][filters][0][condition_type]=like",
+					"protocol": "https",
+					"host": [
+						"alharamstores",
+						"com"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"products",
+						""
+					],
+					"query": [
+						{
+							"key": "searchCriteria[filter_groups][0][filters][0][field]",
+							"value": "category_id"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][0][value]",
+							"value": "141"
+						},
+						{
+							"key": "searchCriteria[filter_groups][0][filters][0][condition_type]",
+							"value": "eq"
+						},
+						{
+							"key": "searchCriteria[sortOrders][1][field]",
+							"value": "price"
+						},
+						{
+							"key": "searchCriteria[sortOrders][1][direction]",
+							"value": "DESC"
+						},
+						{
+							"key": "searchCriteria[pageSize]",
+							"value": "20"
+						},
+						{
+							"key": "searchCriteria[currentPage]",
+							"value": "1"
+						},
+						{
+							"key": "",
+							"value": ""
+						},
+						{
+							"key": "searchCriteria[filter_groups][2][filters][0][field]",
+							"value": "name"
+						},
+						{
+							"key": "searchCriteria[filter_groups][2][filters][0][value]",
+							"value": "%25pink%25"
+						},
+						{
+							"key": "searchCriteria[filter_groups][2][filters][0][condition_type]",
+							"value": "like"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEST ahika API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "vj82x7i7h9boilccdd0fxx8yhlrvrh8f",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://ahika.in/rest/V1/modules",
+					"protocol": "https",
+					"host": [
+						"ahika",
+						"in"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"modules"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shipping method get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "50q7yb3xijihhnhtx3qqrpuqepmmu1g0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://alharamstores.com/rest/V1/carts/87377/estimate-shipping-methods-by-address-id?addressId=7090",
+					"protocol": "https",
+					"host": [
+						"alharamstores",
+						"com"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"carts",
+						"87377",
+						"estimate-shipping-methods-by-address-id"
+					],
+					"query": [
+						{
+							"key": "addressId",
+							"value": "7090"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login token check",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "wyzknn4lb40mo4cbl791fb2k592u4asz",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://alharamstores.com/rest/default/V1/customers/me",
+					"protocol": "https",
+					"host": [
+						"alharamstores",
+						"com"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"customers",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "quote data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3t5ee5f3egj9hkfsosiaou4idlelpnhq",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/rest/default/V1/carts/mine",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"carts",
+						"mine"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AL-Haram sku get product details graphQl",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Store",
+						"value": "default",
+						"description": "arabic/default",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n  products(filter: { sku: { eq: \"221622\" } }) {\r\n    items {\r\n      id\r\n      sku\r\n      name\r\n      stock_status\r\n      description {\r\n        html\r\n      }\r\n      short_description {\r\n        html\r\n      }\r\n      special_price\r\n      price_tiers {\r\n        quantity\r\n        discount {\r\n          percent_off\r\n          amount_off\r\n        }\r\n        final_price {\r\n          value\r\n          currency\r\n        }\r\n      }\r\n      price_range {\r\n        minimum_price {\r\n          regular_price {\r\n            value\r\n            currency\r\n          }\r\n        }\r\n      }\r\n      image {\r\n        url\r\n        label\r\n        position\r\n        disabled\r\n      }\r\n      media_gallery_entries {\r\n        file\r\n      }\r\n      only_x_left_in_stock\r\n      ... on ConfigurableProduct {\r\n        configurable_options {\r\n          id\r\n          attribute_code\r\n          label\r\n          values {\r\n            value_index\r\n            label\r\n            swatch_data {\r\n              __typename\r\n              value\r\n            }\r\n          }\r\n        }\r\n        variants {\r\n          product {\r\n            sku\r\n            media_gallery_entries {\r\n                file\r\n            }\r\n          }\r\n          attributes {\r\n            code\r\n            value_index\r\n            label\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{url}}/graphql",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productdetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n  products(filter: { sku: { eq: \"8268A\" } }) {\r\n    items {\r\n      id\r\n      sku\r\n      name\r\n      stock_status\r\n      description {\r\n        html\r\n      }\r\n      short_description {\r\n        html\r\n      }\r\n      special_price\r\n      price_tiers {\r\n        quantity\r\n        discount {\r\n          percent_off\r\n          amount_off\r\n        }\r\n        final_price {\r\n          value\r\n          currency\r\n        }\r\n      }\r\n      price_range {\r\n        minimum_price {\r\n          regular_price {\r\n            value\r\n            currency\r\n          }\r\n        }\r\n      }\r\n      image {\r\n        url\r\n        label\r\n        position\r\n        disabled\r\n      }\r\n      media_gallery_entries {\r\n        file\r\n      }\r\n      only_x_left_in_stock\r\n      ... on ConfigurableProduct {\r\n        configurable_options {\r\n          id\r\n          attribute_code\r\n          label\r\n          values {\r\n            value_index\r\n            label\r\n            swatch_data {\r\n              __typename\r\n              value\r\n            }\r\n          }\r\n        }\r\n        variants {\r\n          product {\r\n            sku\r\n            media_gallery_entries {\r\n                file\r\n            }\r\n          }\r\n          attributes {\r\n            code\r\n            value_index\r\n            label\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "https://alharamstores.com/graphql",
+					"protocol": "https",
+					"host": [
+						"alharamstores",
+						"com"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
